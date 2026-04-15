@@ -112,5 +112,5 @@ This repository was created for coursework submission in:
 * Statistical Analysis
 * Linear Regression
 
-👨‍💻 Author
-Sagaar
+👨‍💻 Project team: 
+ Sagar Prajapati | Ashish Sagare | Aarati Sav
