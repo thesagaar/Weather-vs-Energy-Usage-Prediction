@@ -1,60 +1,116 @@
-Weather vs Energy Usage Prediction using Linear Regression
-📌 Overview
-This project analyzes how weather conditions affect energy consumption using Linear Regression. 
-We used weather features such as outside temperature, humidity, and wind speed to predict appliance energy usage.
+🌦️ Weather vs Energy Usage Prediction using Linear Regression
 
-📂 Dataset
+📌 Project Overview
+This project predicts household appliance energy consumption using weather-related variables through Multiple Linear Regression.
+It was developed as an academic project for Numerical Methods / Statistical Analysis, demonstrating complete data analysis, regression modeling, prediction, visualization, and evaluation.
+
+🎯 Objective
+To predict Appliances Energy Consumption using the following input variables:
+
+  i. Outside Temperature (T_out)
+ ii. Outside Humidity (RH_out)
+iii. Windspeed (Windspeed)
+
+Output Variable:
+ Appliances (Energy Consumption)
+
+📂 Dataset Information
 Dataset: Appliances Energy Prediction Dataset
+Source: Kaggle / UCI Repository
+Rows: 19,735
+Format: CSV
 
-Source: Kaggle
+🛠️ Technologies Used
 
-Records: ~19,735 rows
+* Python
+* Google Colab
+* Jupyter Notebook
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
-Features Used:
+📊 Statistical Analysis Performed
+The following measures were calculated:
 
-T_out
+* Mean
+* Median
+* Mode
+* Standard Deviation
+* Variance
+* Correlation
 
-RH_out
+📐 Regression Model
+General Formula:
+Y = c + m₁X₁ + m₂X₂ + m₃X₃
 
-Windspeed
+Applied Formula:
+Appliances = c + m₁(Tout) + m₂(RHout) + m₃(Windspeed)
 
-Target:
+Where:
 
-Appliances (Energy Consumption)
+* c = Intercept
+* m₁, m₂, m₃ = Regression Coefficients
 
-🛠 Tech Stack
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn 
-Scikit-learn
-Google Colab
+🔄 Workflow
 
-📊 Project Workflow
-Load Dataset Data Analysis Statistical Measures (Mean, Median, Mode, Variance, Std) Visualization Linear Regression Model Equation Generation Prediction Evaluation
+* Import Libraries
+* Load Dataset
+* Data Inspection
+* Null Value Check
+* Statistical Analysis
+* Feature Selection
+* Train-Test Split
+* Train Linear Regression Model
+* Generate Equation
+* Predict Values
+* Visualize Results
+* Final Summary
 
-📐 Regression Formula
-Energy = a0 + a1(Tout) + a2(RHout) + a3(Windspeed)
+📈 Dashboard Output
+Dashboard
 
-📈 Outputs:
+Included Visualizations:
 
-Heatmap:
-<img width="437" height="311" alt="histogram" src="https://github.com/user-attachments/assets/a622fe95-3dc2-4f47-ba83-b95d2711a344" />
-
-Scatter Plot:
-<img width="380" height="232" alt="scatterplot" src="https://github.com/user-attachments/assets/1b3edf2d-af7f-430e-91ce-01a029c02124" />
-
-Time plot:
-<img width="750" height="293" alt="time plot" src="https://github.com/user-attachments/assets/dae69cd6-b2d4-40fd-9d57-f39ed8f8831b" />
-
-
-Prediction Output:
-Prediction
+* Scatter Plot + Regression Line
+* Sorted X vs Predicted Y
+* Residual Plot
+* Histogram of Residuals
 
 📉 Evaluation Metrics
-Mean Squared Error (MSE) R² Score
-🚀 How to Run
-Open notebook in Google Colab Upload dataset Run all cells
-📁 Files Included
-Notebook (.ipynb) Report (.docx) Output Images Dataset
+
+* MAE → Mean Absolute Error
+* MSE → Mean Squared Error
+* RMSE → Root Mean Squared Error
+* R² Score → Explained Variance of Model
+
+▶️ How to Run
+
+Google Colab:
+
+* Upload notebook file
+* Upload dataset CSV
+* Click Runtime → Run all
+
+Local Jupyter Notebook:
+bash
+pip install -r requirements.txt
+jupyter notebook
+
+📦 Files Included
+
+* Weather_vs_Energy_Usage_Prediction.ipynb
+* requirements.txt
+* outputs/weather_energy_dashboard.png
+* report/Weather_Energy_Report.docx
+
+🎓 Academic Purpose
+This repository was created for coursework submission in:
+
+* Numerical Methods
+* Statistical Analysis
+* Linear Regression
+
+👨‍💻 Author
+Sagaar
